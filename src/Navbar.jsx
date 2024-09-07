@@ -78,7 +78,7 @@ const Navbar = async() => {
                         {menu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Safiya</a>
+                <a className="btn btn-ghost text-xl">Frienemie Ltd</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

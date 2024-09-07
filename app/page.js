@@ -6,7 +6,7 @@ const image1 = 'https://static.vecteezy.com/system/resources/thumbnails/008/190/
 const page = () => {
   return (
 
-    <div className="hero md:py-24 bg-base-200">
+    <div className="hero md:py-24">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
           src={image1}
