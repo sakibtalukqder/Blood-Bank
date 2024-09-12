@@ -43,7 +43,7 @@ const page = () => {
         <div>
             <ToastContainer />
             <section className="">
-                <div className="flex flex-col items-center justify-center px-6 mx-auto md:my-20 lg:py-0">
+                <div className="flex flex-col items-center justify-center px-6 mx-auto md:my-20 my-12 lg:py-0">
 
                     <div className="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -66,7 +66,7 @@ const page = () => {
                                 <div></div>
                                 <button type="submit" className="w-full btn btn-primary hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium ">Login</button>
                                 <div></div>
-                                <Link href={'/components/signup'} className="text-sm font-light text-gray-500 mt-4 ">
+                                <Link href={'/signup'} className="text-sm font-light text-gray-500 mt-4 ">
                                     Don’t have an account yet? <span href="#" className="font-medium text-primary-600 hover:underline">Sign up</span>
                                 </Link>
                             </form>

@@ -12,12 +12,12 @@ const Navbar = async() => {
     const menu = <>
         <li><Link href={'/'}>Home</Link></li>
         <li><Link href={'/doner/list'}>Doners</Link></li>
-        <li><Link href={'/components/about'}>AboutUs</Link></li>
-        <li><Link href={'/components/about'}>Contract</Link></li>
+        <li><Link href={'/about'}>AboutUs</Link></li>
+        <li><Link href={'/Contract'}>Contract</Link></li>
 
         {
             ((user?.role == "CONTRIBUTOR") || (user?.role == "ADMIN")) ? (
-                <li className='bg-green-500 rounded-lg'>
+                <li className='underline rounded-lg'>
                     <details className='w-full'>
                         <summary>Approval {'  '}</summary>
                         <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -45,7 +45,7 @@ const Navbar = async() => {
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                 <li>
-                    <Link href={'/components/UserProfile'} className="justify-between">
+                    <Link href={'/UserProfile'} className="justify-between">
                         Profile
                     </Link>
                 </li>
@@ -58,8 +58,8 @@ const Navbar = async() => {
 
     const authenTication = <>
         <ul className="menu menu-horizontal px-1 text-blue-800 underline">
-            <li><Link href={'/components/login'}>Login</Link></li>
-            <li><Link href={'/components/signup'}>Signup</Link></li>
+            <li><Link href={'/login'}>Login</Link></li>
+            <li><Link href={'/signup'}>Signup</Link></li>
         </ul>
 
     </>
@@ -75,7 +75,7 @@ const Navbar = async() => {
                         {menu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl font-bold">Life<span className='text-red-600 -mx-2 text-2xl px-0'>S</span>tream</a>
+                <a className="btn btn-ghost text-xl font-bold">Life<span className='text-red-600 -mx-2 text-2xl px-0 font-extrabold'>S</span>tream</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

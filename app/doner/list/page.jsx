@@ -89,7 +89,7 @@ const page = () => {
             <div className="flex flex-col mt-4">
 
 
-                <div className='flex items-center justify-center gap-4 w-full'>
+                <div className='flex items-center justify-center gap-4 w-full flex-col md:flex-row'>
 
                     <label className="input input-bordered flex items-center gap-2 w-3/4">
                         <input
