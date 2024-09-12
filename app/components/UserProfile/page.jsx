@@ -5,7 +5,7 @@ import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const BaseUrl = "http://localhost:3000/api"
+const BaseUrl = process.env.NEXT_PUBLIC_URL
 
 const UserProfile = () => {
 

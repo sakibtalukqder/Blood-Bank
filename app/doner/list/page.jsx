@@ -4,7 +4,7 @@ import Loader from '@/src/Loader';
 import Pagination from '@/src/Pagenation';
 import Link from 'next/link';
 
-const BaseUrl = "http://localhost:3000/api"
+const BaseUrl = process.env.NEXT_PUBLIC_URL
 
 
 const page = () => {
@@ -160,7 +160,7 @@ const page = () => {
             </div>
             {
                 Array.isArray(doner) ? <>
-                    <Pagination userCount={doner.length} currentPage={currentPage} pageSize={pageSize} onPageChenge={onPageChenge} />
+                    <Pagination  userCount={doner.length} currentPage={currentPage} pageSize={pageSize} onPageChenge={onPageChenge} />
                 </> : ""
             }
         </div >

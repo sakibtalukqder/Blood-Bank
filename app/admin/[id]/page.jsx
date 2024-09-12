@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const BaseUrl = "http://localhost:3000/api"
+const BaseUrl = process.env.NEXT_PUBLIC_URL
 
 const page = () => {
 

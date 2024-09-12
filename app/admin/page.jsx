@@ -4,8 +4,7 @@ import Loader from '@/src/Loader';
 import Pagination from '@/src/Pagenation';
 import Link from 'next/link';
 
-const BaseUrl = "http://localhost:3000/api"
-
+const BaseUrl = process.env.NEXT_PUBLIC_URL
 
 const page = () => {
 

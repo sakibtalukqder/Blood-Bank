@@ -5,7 +5,7 @@ import { useParams, useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
-const BaseUrl = "http://localhost:3000/api"
+const BaseUrl = process.env.NEXT_PUBLIC_URL
 
 const page = () => {
 
