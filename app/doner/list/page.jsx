@@ -85,7 +85,7 @@ const page = () => {
 
     return (
         <div>
-            <h1 className='text-center w-full font-bold text-3xl mt-3 bg-blue-100 p-4'>Doner List</h1>
+            <h1 className='text-center w-full font-bold text-3xl mt-3 bg-blue-100 p-4 text-black'>Doner List</h1>
             <div className="flex flex-col mt-4">
 
 

@@ -16,6 +16,7 @@ const Navbar = async() => {
         <li><Link href={'/'}>Home</Link></li>
         <li><Link href={'/doner/list'}>Doners</Link></li>
         <li><Link href={'/components/about'}>AboutUs</Link></li>
+        <li><Link href={'/components/about'}>Contract</Link></li>
 
         {
             ((user?.role == "CONTRIBUTOR") || (user?.role == "ADMIN")) ? (
@@ -78,7 +79,7 @@ const Navbar = async() => {
                         {menu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Frienemie Ltd</a>
+                <a className="btn btn-ghost text-xl font-bold">Life<span className='text-red-600 -mx-2 text-2xl px-0'>S</span>tream</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

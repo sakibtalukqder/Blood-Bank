@@ -58,7 +58,7 @@ const page = () => {
 
     return (
         <div>
-            <h1 className='text-center w-full font-bold text-3xl mt-3 bg-blue-100 p-4'>Applayer List</h1>
+            <h1 className='text-center w-full font-bold text-3xl mt-3 bg-blue-100 p-4 text-black'>Applayer List</h1>
             <div className="flex flex-col mt-4">
                 <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
                     <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
