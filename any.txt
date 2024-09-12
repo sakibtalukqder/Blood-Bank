@@ -1,0 +1,19 @@
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+# BaseUrl = "http://localhost:3000/api"
+
+# import 'react-toastify/dist/ReactToastify.css';
+
+DATABASE_URL="mysql://avnadmin:AVNS_iV6qBn2lS0JtbXmFaU4@mysql-2a89199a-eshop-01.i.aivencloud.com:17649/defaultdb?ssl-mode=REQUIRED"
+
+# DATABASE_URL="mysql://root:@localhost:3306/Blood-Bank"
+JWT_SECRET = "sakibtalukqder"
+NEXTAUTH_SECRET = "---Secret"
+
+# mysql --user avnadmin --password=AVNS_iV6qBn2lS0JtbXmFaU4 --host mysql-2a89199a-eshop-01.i.aivencloud.com --port 17649 defaultdb
+
+backend_url = "http://localhost:3000/api"
