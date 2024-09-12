@@ -13,23 +13,25 @@ const imgArray = [
   'https://www.aiub.edu/Files/Uploads/original/blooddonationaiubshomoyclub1402202401.jpeg',
 ]
 
+const imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElsLVGzfjhqQ6HJUk6z2Jb-mn53Hk5avIkyxWYgRgHA&s'
+
 const Testimonials = [
   {
     "id": 1,
     "name": "Peter Renolds",
-    "img": "https://randomuser.me/api/portraits/men/10.jpg",
+    "img": "https://avatar.iran.liara.run/public",
     "comment": "The fitness apparel I bought here fits perfectly and feels amazing. I highly recommend this store to anyone looking for quality gear.",
   },
   {
     "id": 2,
     "name": "Peter Renolds",
-    "img": "https://randomuser.me/api/portraits/men/10.jpg",
+    "img": "https://avatar.iran.liara.run/public/boy",
     "comment": "The fitness apparel I bought here fits perfectly and feels amazing. I highly recommend this store to anyone looking for quality gear.",
   },
   {
     "id": 3,
     "name": "Peter Renolds",
-    "img": "https://randomuser.me/api/portraits/men/10.jpg",
+    "img": "https://avatar.iran.liara.run/public/girl",
     "comment": "The fitness apparel I bought here fits perfectly and feels amazing. I highly recommend this store to anyone looking for quality gear.",
   },
 ]
@@ -102,7 +104,7 @@ const Page = () => {
                             <div class="font-display text-base">{user.name}</div>
                           </div>
                           <div class="overflow-hidden rounded-full  ">
-                            <img alt="" class="h-14 w-14 object-cover transparent-text" src={user.img} />
+                            <img alt="" class="h-14 w-14 object-cover transparent-text" src={user.img | imgUrl} />
                           </div>
                         </figcaption>
                       </figure>

@@ -7,10 +7,7 @@ import { authOptions } from '@/app/api/auth/[...nextauth]/auth/auth';
 const Navbar = async() => {
 
     const session = await getServerSession(authOptions);
-
     const user = session?.user
-
-
 
     const menu = <>
         <li><Link href={'/'}>Home</Link></li>
@@ -36,7 +33,6 @@ const Navbar = async() => {
         }
 
     </>
-
 
     const userIcon = <>
 
