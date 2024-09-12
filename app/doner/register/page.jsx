@@ -29,7 +29,7 @@ const page = () => {
 
     const ApplayForDonner = async (e) => {
         e.preventDefault()
-        if ( bloodType != null && dateOfBirth != null
+        if (bloodType != null && dateOfBirth != null
             && lastDonate != null && Division != null && District != null
             && Upazilla != null && Code != null) {
             try {
@@ -74,60 +74,61 @@ const page = () => {
     return (
         <>
             <div className="flex items-center justify-center p-12">
-                {/* <!-- Author: FormBold Team --> */} <ToastContainer />
-                <div className="mx-auto w-full max-w-[550px] bg-white">
-                    <form onSubmit={ApplayForDonner}>
+                {/* <!-- Author: Sakib Talukqder --> */}
+                <ToastContainer />
+                <div className="mx-auto w-full max-w-[550px]">
+                    <form onSubmit={ApplayForDonner} className='p-4'>
                         <div className="mb-5">
-                            <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="name" className="mb-3 block text-base font-medium text-[#dbdbe3]">
                                 Full Name
                             </label>
                             <input
                                 value={user?.name} readOnly type="text" name="name" id="name" placeholder="Full Name"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                className="w-full bg-slate-800 rounded-md border border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div className="mb-5">
-                            <label htmlFor="email" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="email" className="mb-3 block text-base font-medium text-[#dbdbe3]">
                                 Email Address
                             </label>
                             <input
                                 value={user?.email} readOnly type="email" name="email" id="email" placeholder="Enter your email"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                className="w-full rounded-md border border-[#e0e0e0] bg-slate-800  py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
-                        
+
                         <div className="-mx-3 flex flex-wrap">
                             <div className="w-full px-3 sm:w-1/2">
                                 <div className="mb-5">
-                                    <label htmlFor="date" className="mb-3 block text-base font-medium text-[#07074D]">
+                                    <label htmlFor="date" className="mb-3 block text-base font-medium text-[#dbdbe3]">
                                         Date of birth
                                     </label>
                                     <input
                                         onChange={(e) => setDateOfBirth(e.target.value)}
                                         type="date" name="date" id="date"
-                                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                        className="w-full rounded-md border border-[#e0e0e0] bg-slate-800  py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                             <div className="w-full px-3 sm:w-1/2">
                                 <div className="mb-5">
-                                    <label htmlFor="time" className="mb-3 block text-base font-medium text-[#07074D]">
+                                    <label htmlFor="time" className="mb-3 block text-base font-medium text-[#dbdbe3]">
                                         Last Donate Date
                                     </label>
                                     <input
                                         onChange={(e) => setLastDonate(e.target.value)}
                                         type="date" name="time" id="time"
-                                        className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                        className="w-full rounded-md border bg-slate-800 border-[#e0e0e0] py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                 </div>
                             </div>
                         </div>
 
                         <div className="mb-5">
-                            <label htmlFor="bloodGroup" className="mb-3 block text-base font-medium text-[#07074D]">
+                            <label htmlFor="bloodGroup" className="mb-3 block text-base font-medium text-[#dbdbe3]">
                                 Blood Group
                             </label>
                             <select
                                 onChange={(e) => setBloodType(e.target.value)}
                                 id="bloodGroup"
                                 name="bloodGroup"
-                                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                                className="w-full rounded-md border border-[#e0e0e0] bg-slate-800 py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md"
                             >
                                 <option value="">Select your blood group</option>
                                 <option value="A+">A+</option>
@@ -142,7 +143,7 @@ const page = () => {
                         </div>
 
                         <div className="mb-5 pt-3">
-                            <label className="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
+                            <label className="mb-5 block text-base font-semibold text-[#dbdbe3] sm:text-xl">
                                 Address Details
                             </label>
                             <div className="-mx-3 flex flex-wrap">
@@ -150,24 +151,24 @@ const page = () => {
                                     <div className="mb-5">
                                         <input
                                             onChange={(e) => setDivision(e.target.value)}
-                                            type="text" name="area" id="area" placeholder="Enter Division"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                            type="text" name="area" id="area" placeholder="Division"
+                                            className="w-full rounded-md border border-[#e0e0e0] bg-slate-800  py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                     </div>
                                 </div>
                                 <div className="w-full px-3 sm:w-1/2">
                                     <div className="mb-5">
                                         <input
                                             onChange={(e) => setDistrict(e.target.value)}
-                                            type="text" name="city" id="city" placeholder="Enter District"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                            type="text" name="city" id="city" placeholder="District"
+                                            className="w-full rounded-md border border-[#e0e0e0]  bg-slate-800 py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                     </div>
                                 </div>
                                 <div className="w-full px-3 sm:w-1/2">
                                     <div className="mb-5">
                                         <input
                                             onChange={(e) => setUpazilla(e.target.value)}
-                                            type="text" name="state" id="state" placeholder="Enter Upazilla"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                            type="text" name="state" id="state" placeholder="Upazilla"
+                                            className="w-full rounded-md border border-[#e0e0e0] bg-slate-800  py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                     </div>
                                 </div>
                                 <div className="w-full px-3 sm:w-1/2">
@@ -175,7 +176,7 @@ const page = () => {
                                         <input
                                             onChange={(e) => setCode(e.target.value)}
                                             type="text" name="post-code" id="post-code" placeholder="Post Code"
-                                            className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                                            className="w-full rounded-md border border-[#e0e0e0] bg-slate-800  py-3 px-6 text-base font-medium text-[#c2c2c2] outline-none focus:border-[#6A64F1] focus:shadow-md" />
                                     </div>
                                 </div>
                             </div>
