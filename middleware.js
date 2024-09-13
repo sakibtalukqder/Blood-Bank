@@ -14,15 +14,15 @@ export default withAuth(
         const ADMIN = USER?.role === 'ADMIN'
 
         if (request.nextUrl.pathname.startsWith('/doner/register') && (!USER)) {
-            return NextResponse.rewrite(new URL('/components/signup', request.url))
+            return NextResponse.rewrite(new URL('/signup', request.url))
         }
 
         if (request.nextUrl.pathname.startsWith('/doner/approval') && (VISITOR)) {
-            return NextResponse.rewrite(new URL('/components/access-denide', request.url))
+            return NextResponse.rewrite(new URL('/access-denide', request.url))
         }
 
         if (request.nextUrl.pathname.startsWith('/admin') && (!ADMIN)) {
-            return NextResponse.rewrite(new URL('/components/access-denide', request.url))
+            return NextResponse.rewrite(new URL('/access-denide', request.url))
         }
         
 
@@ -43,7 +43,7 @@ export const config = {
     matcher: [
         '/doner/register/:path*',
         '/doner/approval/:path*',
-        '/components/UserProfile',
+        '/UserProfile',
         '/admin/:path*'
     ]
 }
