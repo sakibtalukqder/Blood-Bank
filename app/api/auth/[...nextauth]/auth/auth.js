@@ -7,7 +7,7 @@ import { prisma } from "@/config/db";
 export const authOptions = {
     adapter: PrismaAdapter(prisma),
     pages: {
-        signIn: '/components/login'
+        signIn: '/login'
     },
     session: {
         strategy: 'jwt'
