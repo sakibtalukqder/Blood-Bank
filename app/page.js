@@ -13,7 +13,7 @@ const imgArray = [
   'https://www.aiub.edu/Files/Uploads/original/blooddonationaiubshomoyclub1402202401.jpeg',
 ]
 
-const imgUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRElsLVGzfjhqQ6HJUk6z2Jb-mn53Hk5avIkyxWYgRgHA&s'
+const imgUrl = 'https://avatar.iran.liara.run/public'
 
 const Testimonials = [
   {
@@ -39,12 +39,12 @@ const Testimonials = [
 const Page = () => {
   return (
     <div className="min-h-screen">
-      <div className="hero md:py-24">
-        <div className="hero-content flex-col lg:flex-row-reverse   rounded-lg shadow-lg">
+      <div className="hero md:py-24 py-8">
+        <div className="hero-content flex-col lg:flex-row-reverse rounded-lg shadow-lg">
           <img
             src={image1}
             alt="Donate Blood"
-            className="max-w-sm rounded-lg shadow-2xl"
+            className="max-w-sm rounded-lg shadow-2xl w-full"
           />
           <div className="p-4 lg:p-8">
             <h2 className="text-4xl font-semibold text-gray-50 mb-4">Donate Blood, Save Lives</h2>
@@ -104,7 +104,7 @@ const Page = () => {
                             <div class="font-display text-base">{user.name}</div>
                           </div>
                           <div class="overflow-hidden rounded-full  ">
-                            <img alt="" class="h-14 w-14 object-cover transparent-text" src={user.img | imgUrl} />
+                            <img alt="" class="h-14 w-14 object-cover transparent-text" src={user.img} />
                           </div>
                         </figcaption>
                       </figure>
